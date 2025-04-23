@@ -542,10 +542,13 @@ mark{
     text-align: center;
 }
 @media (max-width:768px){
-
+    .kaali-events{
+        height: 350px;
+    }
  .kaali-events h2{
     font-size:25px;
     text-align:center;
+    line-height: 2;
  }
     
 }
@@ -555,7 +558,7 @@ mark{
     justify-content: space-between;
     align-items: center;
     width: 88%;
-    background-color:#555 ;
+    /* background-color:#555 ; */
     margin-top: -65px;
 }
 .box1{
@@ -563,14 +566,26 @@ mark{
     height: 250px;
     background-color: cadetblue;
 }
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
 .box2{
     width: 500px;
     height: 250px;background-color: cadetblue;
+}
+.box2 img{
+    width: 100%;
+    height: 100%;
 }
 .box3{
     width:270px;
     height: 250px;
     background-color: cadetblue;   
+}
+.box3 img{
+    width: 100%;
+    height: 100%;
 }
 @media(max-width:768px){
     .box-container{
@@ -591,5 +606,77 @@ mark{
     .box3{
         width:100%;
         height: 250px; 
+    }
+}
+
+.events-2{
+    width: 90%;
+    /* background-color: violet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+.events-2-box1{
+    width: 45%;
+    background-color: cadetblue;
+    height: 250px;
+}
+.events-2-box1 img{
+    width: 100% ;
+    height: 100%;
+}
+.events-2-box2{
+    width: 45%;
+    height: 250px;
+    background-color: chocolate;
+}
+.events-2-box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:768px){
+    .events-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .events-2-box1{
+        width: 100%;
+    }
+    .events-2-box2{
+        width: 100%;
+    }
+}
+
+.events-btn-div{
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.events-btn-div button{
+    background-color: var(--cyan);
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+.events-btn-div button:hover{
+    background-color: var(--btn-cyan-hover);
+    color: white;
+}
+
+@media (max-width:768px){
+    .events-btn-div button{
+        padding: 10px 12px;
+        font-size: 1rem;
     }
 }
