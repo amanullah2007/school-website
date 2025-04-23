@@ -268,19 +268,19 @@ main{
 /* Styling for Explore Section */
 .explore {
     position: absolute;
-    bottom: 40px; /* 👈 use fixed value instead of % */
+    bottom: 15px; /* 👈 use fixed value instead of % */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     z-index: 10;
 }
 
 .explore i {
     display: block;
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 0.8rem;
     color: white;
     animation:bounce 1.5s infinite; /* Add a bounce animation for the arrow */
@@ -364,7 +364,7 @@ main{
 }
 mark{
     background-color: var(--cyan);
-    color: white;
+    color: var(--paragraph-color);
     padding: 5px 5px;
 }
 .about-heading h2{
@@ -454,6 +454,7 @@ mark{
     width: 100%;
     /* background: #e2b2b2; */
     margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 .rc-text h2{
     text-align: center;
