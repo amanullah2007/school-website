@@ -677,6 +677,349 @@ mark{
 @media (max-width:768px){
     .events-btn-div button{
         padding: 10px 12px;
+        font-size: 1rem;   
+    }
+}
+.kaali-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    
+}
+.kaali-2-box-1{
+    width: 30%;
+    background-color: black;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kaali-2-box-1 h1{
+    color: white;
+}
+
+.kaali-2-box-1-p1{
+    margin-top: 1rem;
+    color: var(--cyan);
+    font-size: 1.2rem;
+}
+
+.kaali-2-box-1-p2{
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--paragraph-color);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width:768px) {
+    .kaali-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kaali-2-box-1{
+        /* background-color: burlywood; */
+        width: 80%;
+    }
+}
+
+/* SECTION-3 TESTIMONIALS */
+
+.testimonials{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+.testimonials-text{
+    width: 70%;
+    /* background-color: violet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.testimonials-text h1{
+    font-size: 2rem;
+}
+
+.testimonials-text p{
+    color: var(--paragraph-color);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+@media (max-width:768px) {
+    .testimonials-text{
+        width: 90%;
+    }
+
+    .testimonials-text p{
         font-size: 1rem;
+    }
+}
+
+.testi-boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* background-color: violet; */
+    margin-top: 3rem;
+}
+.testi-box-1{
+    width: 28%;
+    /* background-color: #555; */
+    padding: 30px 25px;
+    border: 1px solid rgba(129, 127, 127, 0.221);
+}
+.testi-box-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background-color: aquamarine; */
+    gap: 1rem;
+}
+
+.testi-box-header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.testi-box-1 span{
+    font-weight: bold;
+    color: black;
+    font-size: small;
+}
+.testi-box-1 p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--paragraph-color);
+}
+
+.testi-box-1 button{
+    padding: 5px 10px;
+    background-color: var(--cyan);
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-left: 4.5rem;
+}
+.testi-box-1 button:hover{
+    background-color: var(--btn-cyan-hover);
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .testi-boxes{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .testi-box-1{
+        width: 80%;
+        padding: 30px 20px;
+    }
+}
+
+footer{
+    width: 100%;
+    background-color:black ;
+    padding: 6rem 0 2rem 0;
+    
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.footer-part-1{
+    width:30%;
+    /* background-color: burlywood; */
+}
+
+.footer-part-1 p{
+    margin-top: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--paragraph-color);
+    font-style: italic;
+    font-weight: bold;
+}
+.footer-part-1 h2{
+    color: white;
+}
+footer input{
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+footer input:focus{
+    border: 1px solid var(--cyan);
+}
+footer button{
+    width: 20%;
+    padding:1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--btn-cyan-hover);
+}
+
+/* part-2 mai part-3 ki bhi styling hai */
+
+.footer-part-2{
+    width: 20%;
+    /* background-color: burlywood; */
+}
+.footer-part-2 h2{
+    color: white;
+}
+.footer-part-2 p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--paragraph-color);
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.footer-part-2 a{
+    text-decoration: none;
+    color: var(--cyan);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.footer-part-2 span{
+    color: var(--cyan);
+    font-weight: bold;
+    font-size: small;
+}
+.footer-part-2 i{
+    font-size:0.8rem ;
+    
+}
+.footer-part-2 a:hover{
+    color: white;
+   
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.footer-icons i{
+    font-size: 1.2rem;
+    
+}
+
+.footer-part-4{
+    width: 20%;
+}
+.footer-part-4 h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+.footer-part-4 ul{
+    gap: 1rem;
+    list-style-type:none ;
+}
+.footer-part-4 ul li a{
+    text-decoration: none;
+    color: var(--cyan);
+    font-weight: bold;
+
+}
+.footer-part-4 ul li a:hover{
+    color: white;
+}
+
+.footer-line{
+     width: 100%;
+     padding-bottom:0 ;
+     padding-top:3rem ;
+     padding-left: 3rem;
+     padding-right: 3rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border-top: 1px solid var(--paragraph-color);
+     margin-top: 7rem;
+}
+.footer-last{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.footer-last p{
+    color: var(--paragraph-color);
+    font-size: 0.9rem;
+}
+
+@media (max-width:768px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .footer-part-1{
+        width: 80%;
+        text-align: center;
+        
+    }
+    footer input{
+        width: 70%;
+        border-radius:0 ;
+    }
+    
+    .footer-part-2{
+        width: 80%;
+        text-align: center;
+    }
+    .footer-part-4{
+        width: 80%;
+        text-align: center;
+    }
+    .footer-icons{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-line{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0 ;
+        padding-right: 0 ;
+        gap: 1.5rem;
+        
+    }
+    .footer-last{
+       gap: 1.5rem;
+        font-size: 0.8rem;
     }
 }
