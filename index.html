@@ -6,6 +6,7 @@
     <title>Document</title>
     <!-- custom JS -->
     <script src="assets/JS/index.js" defer></script>
+   
 
     <!-- custom css -->
      <link rel="stylesheet" href="assets/styling/index.css">
@@ -28,41 +29,8 @@
 
 </head>
 <body>
-    <header>
-        <nav class="top-nav" id="top-nav">
-            <div class="contact">
-                <i class="fa-solid fa-phone"></i> <p>+92 000-9999999</p>
-                <i class="fa-solid fa-envelope"></i> <p>info@yoursite.com</p>
-            </div>
 
-            <div class="nav-icons">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-pinterest"></i></a>
-            </div>
-        </nav>
-
-        <nav class="bottom-nav" id="bottom-nav">
-             <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
-            </div>
-
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Work with Us</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span></li>
-                </ul>
-            </div>
-           <div class="menu"> <i class="fa-solid fa-bars"></i></div> 
-         </nav>
-    </header>
+    <header id="navbar"> </header>
 
 
      <main> 
@@ -286,71 +254,38 @@
             </div>
          </section>
 
+         <section class="admission">
+            <h1>Admissions</h1>
+            <div class="admission-text">
+                <img src="assets/images/admission-sec.avif" alt="admission-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel voluptas architecto quia id adipisci, quam aliquam dolor accusamus laudantium soluta reiciendis at? Dolores libero ipsam, rem cum facere nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit possimus repellendus, quo aliquid esse, error, placeat nostrum dolorem optio et corrupti illo modi ipsam aut. A officiis maiores est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vel voluptas architecto quia id adipisci, quam aliquam dolor accusamus laudantium soluta reiciendis at? Dolores libero ipsam, rem cum facere nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem velit possimus repellendus, quo aliquid esse, error, placeat nostrum dolorem optio et corrupti illo modi ipsam aut. A officiis maiores est!</p>
+            </div>
+
+           <div class="admission-btn-div">
+            <a href="" class="admission-btn">Apply Now</a>
+           </div>
+
+            <div class="admission-offer">
+                <h2>50% OFF</h2>
+                <p>Admissions are open form 01-01/25 to 01-03-25 .
+                    <br>
+                    We Welcome u to admit your child and safe his/her future with Us.</p>
+            </div>
+
+            
+         </section>
+
     </main>
 
 
 
     <!-- footer -->
-    <footer>
+    <footer id="footer"> </footer>
 
-       <div class="footer-container">
-
-        <div class="footer-part-1">
-            <h2>Subscribe Our Newsletter</h2>
-            <p>You can opt out of our newsletters at any time.
-               See our privacy policy.</p>
-            <div class="div-input">
-               <input type="email" placeholder="Enter your email address" required>
-               <button><i class="fa-solid fa-paper-plane"></i></button>
-           </div>
-       </div>
-       <div class="footer-part-2">
-            <h2>Join us today</h2>
-            <p>Would you like to earn your profits by joining our team? Join us without losing time.</p>
-            <a href=""> Became a Teacher <i class="fa-solid fa-arrow-right"></i></a>
-       </div>
-       <div class="footer-part-3">
-            <h2>Follow Us</h2>
-            <p>Do follow us on our Social Media for latest posts and news</p>
-
-            <div class="footer-icons">
-
-            <a href="" class=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="" class=""><i class="fa-brands fa-twitter"></i></a>
-            <a href="" class=""><i class="fa-brands fa-google-plus-g"></i></a>
-            <a href="" class=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="" class=""><i class="fa-brands fa-pinterest"></i></a>
-
-            </div>
-
-           
-       </div>
-
-       <div class="footer-part-4">
-        <h2>Useful links</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Work with Us</a></li>
-            <li><a href="#">Admission</a></li>
-            <li><a href="#">Contact</a></li>
-            
-        </ul>
-     </div>
-         </div>
-       
-       <div class="footer-line">
-        <img src="assets/images/logo.png" alt="logo">
-        <div class="footer-last">
-            <p>Design : HTML.Design</p>
-            <p>Distributed by : unknown</p>
-        </div>
-       </div>
-    
-    </footer>
-
-    <script>
+   
+   
+   <script>
   
   $(".owl-carousel").owlCarousel({
     items: 4,
@@ -370,9 +305,9 @@
         1000: { items: 4 }
     }
 });
-
-
     </script>
+
+<script src="assets/JS/nav&footer.js"></script>
 </body>
 </html>
 

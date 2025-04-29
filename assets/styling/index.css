@@ -51,7 +51,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
-    padding: 17px 15px;
+    padding: 8px 50px;
 }
 .top-nav-hide{
     display: none !important;
@@ -140,7 +140,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:transparent;
+    background-color:black;
+    border-top: 1px solid var(--cyan);
     height: 80px; 
      width: 100%; 
      transition: all 0.2s ease-in-out;
@@ -170,7 +171,7 @@ body {
 .nav-links ul li a,span{
     text-decoration: none;
     color: white;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: bold;
    
 }
@@ -1101,4 +1102,101 @@ footer button{
     color: white;
     box-shadow: 0 0 15px var(--cyan);
     transform: scale(1.1);
+}
+
+.admission{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: var(--body-bg);
+}
+.admission-text{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.admission-text img{
+    width: 50%;
+    height: 300px;
+
+}
+.admission-text p{
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+    font-style: italic;
+
+}
+.admission h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.admission-offer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin-top:2rem ;
+    background-color:var(--cyan);
+    color:black;
+    padding: 4rem 1rem 4rem 1rem;
+}
+.admission-offer h2{
+    font-size: 5rem ;
+}
+.admission-offer p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.admission-btn-div{
+    margin: 3rem;
+}
+.admission-btn{
+    padding: 13px 35px;
+    background-color:black;
+    color:var(--cyan);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.admission-btn:hover{
+    background-color: var(--btn-cyan-hover);
+    color: white;
+}
+
+@media(max-width:768px){
+    .admission-text{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .admission-text img{
+        width: 100%;
+    }
+    .admission-text p{
+        margin-top: 1rem;
+    }
+    .admission-btn-div{
+        width: 100%;
+        /* background-color: #555; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .admission-offer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .admission-offer p{
+        font-size:1.3rem ;
+    }
 }
