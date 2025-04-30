@@ -62,7 +62,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    gap: 7px;
+    gap: 10px;
 }
 .contact i{
     font-size: 12px;
@@ -119,7 +119,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:17px 15px;
+        padding:8px 15px;
     }
     .contact p{
         margin-right: 5px;
@@ -159,7 +159,13 @@ body {
     width: 100%;
     transition: all 0.2s ease-in-out;
 }
-
+.nav-links ul .active{
+   color: var(--cyan);
+   border-bottom: 2px solid var(--cyan);
+   transition: all 0.3s ease-in-out;
+   font-weight: bold;
+   font-size: 1.3vw;
+}
 .nav-links ul{
     display: flex;
     align-items: center;
