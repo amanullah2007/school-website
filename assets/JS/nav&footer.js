@@ -1,3 +1,5 @@
+//Dynamic Navbar
+
 var navbar = document.querySelector("#navbar")
 navbar.innerHTML = `
  <nav class="top-nav" id="top-nav">
@@ -28,15 +30,29 @@ navbar.innerHTML = `
                     <li><a href="#">Work with Us</a></li>
                     <li><a href="#">Admission</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><span><i class="fa-solid fa-magnifying-glass"></i></span></li>
+                   
                 </ul>
             </div>
-           <div class="menu"> <i class="fa-solid fa-bars"></i></div> 
+
+             <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+            <div class="sidebar-menu" id="sidebar-menu">
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Work with Us</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+            </div>
          </nav>
 `
 
 
-// footer
+//  Dynamic footer
 
 var footer = document.querySelector("#footer")
 footer.innerHTML = `
@@ -96,6 +112,25 @@ footer.innerHTML = `
        </div>
     
 `
+
+
+// sidebar
+var sidebarMenu = document.getElementById("sidebar-menu")
+var menuicon = document.getElementById("menu-icon")
+
+menuicon.addEventListener("click",function(){
+    sidebarMenu.classList.toggle("active")
+})
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY > 8){
+        sidebarMenu.style.top = "5rem"
+    }
+    else{
+        sidebarMenu.style.top = "7rem"
+    }
+})
+
 
 // navbar toggle 
 
