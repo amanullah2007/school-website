@@ -28,7 +28,7 @@ navbar.innerHTML = `
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Work with Us</a></li>
-                    <li><a href="#">Admission</a></li>
+                    <li><a href="admission.html">Admission</a></li>
                     <li><a href="contact.html">Contact</a></li>
                    
                 </ul>
@@ -44,7 +44,7 @@ navbar.innerHTML = `
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Work with Us</a></li>
-                    <li><a href="#">Admission</a></li>
+                    <li><a href="admission.html">Admission</a></li>
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
             </div>
@@ -132,7 +132,7 @@ window.addEventListener("scroll",function(){
 })
 
 
-// navbar toggle 
+// navbar scroll 
 
 window.addEventListener("scroll", function(){
     var topnavbar = document.getElementById("top-nav")

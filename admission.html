@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/admission.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="navbar"></header>
+
+    <!-- Main Content -->
+
+ <!-- Scroll to top button -->
+ <button class="move-to-top" id="move-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+    <main class="main-content">
+        <div class="container">
+            <form id="admissionForm" class="admission-form">
+                <div class="form-header">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-icon">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                    </svg>
+                    <h1>Student Admission Form</h1>
+                    <div class="underline"></div>
+                </div>
+
+                <section class="form-section">
+                    <h2>Student Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Student Name <span class="required">*</span></label>
+                            <input type="text" name="studentName" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Student Surname <span class="required">*</span></label>
+                            <input type="text" name="studentSurname" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Gender <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="boy" required>
+                                    <span class="radio-custom"></span>
+                                    Boy
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="gender" value="girl">
+                                    <span class="radio-custom"></span>
+                                    Girl
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label>Board System <span class="required">*</span></label>
+                            <select name="boardSystem" required>
+                                <option value="">Select Board System</option>
+                                <option value="federal">Federal Board</option>
+                                <option value="punjab">Punjab Board</option>
+                                <option value="sindh">Sindh Board</option>
+                                <option value="kpk">KPK Board</option>
+                                <option value="balochistan">Balochistan Board</option>
+                                <option value="aga_khan">Aga Khan Board</option>
+                                <option value="cambridge">Cambridge International</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Parent Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Father's Full Name <span class="required">*</span></label>
+                            <input type="text" name="fatherName" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Father's CNIC</label>
+                            <input type="text" name="fatherCNIC" placeholder="00000-0000000-0">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Father's Cell <span class="required">*</span></label>
+                            <input type="tel" name="fatherCell" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Mother's Full Name</label>
+                            <input type="text" name="motherName">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Mother's CNIC</label>
+                            <input type="text" name="motherCNIC" placeholder="00000-0000000-0">
+                        </div>
+                        <div class="form-field">
+                            <label>Mother's Cell</label>
+                            <input type="tel" name="motherCell">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2>Contact Information</h2>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>Date of Birth <span class="required">*</span></label>
+                            <input type="date" name="dateOfBirth" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Phone (Res:)</label>
+                            <input type="tel" name="residencePhone">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label>Address <span class="required">*</span></label>
+                        <textarea name="address" required></textarea>
+                    </div>
+                </section>
+
+               <div class="button-div">
+                <button type="submit" class="btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                  </button>
+               </div>
+
+                <div id="successMessage" class="success-message hidden">
+                    Thank you for submitting your admission form
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="assets/JS/admission.js"></script>
+    <script src="assets/JS/nav&footer.js"></script>
+</body>
+</html>
