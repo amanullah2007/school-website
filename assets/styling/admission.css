@@ -132,7 +132,7 @@ label {
     color: var(--cyan);
 }
 
-input,
+main input,
 select,
 textarea {
     width: 100%;
