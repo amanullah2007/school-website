@@ -25,7 +25,7 @@ navbar.innerHTML = `
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Work with Us</a></li>
                     <li><a href="admission.html">Admission</a></li>
@@ -41,7 +41,7 @@ navbar.innerHTML = `
             <div class="sidebar-menu" id="sidebar-menu">
                 <ul class="menu">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Work with Us</a></li>
                     <li><a href="admission.html">Admission</a></li>
