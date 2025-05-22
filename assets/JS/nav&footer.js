@@ -19,7 +19,7 @@ navbar.innerHTML = `
 
         <nav class="bottom-nav" id="bottom-nav">
              <div class="logo">
-                <img src="assets/images/logo.png" alt="logo">
+               <a href="#"> <img src="assets/images/logo.png" alt="logo"></a>
             </div>
 
             <div class="nav-links">
