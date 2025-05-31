@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styling/index.css">
+    <link rel="stylesheet" href="assets/styling/work.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+         <!-- Navbar -->
+      <header id="navbar"></header>
+
+    
+
+      <!-- Scroll to top button -->
+    <button class="move-to-top" id="move-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <main>
+    <div class="work-banner">
+        <img src="assets/images/work-with-us.jpg" alt="Work with Us">
+        <div class="work-banner-content">
+            <h1>We’re on a Mission</h1>
+            <p class="web-p">Enhance and ensure that KPS is the happiest place for
+                <br>
+                learning and growth for students and staff</p>
+                <p class="phone-p">Scroll down for Details</p>
+        </div>
+        
+    </div>
+
+    <!-- form -->
+     <div class="container">
+      <h1>Job Application</h1>
+      <form id="jobForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="firstName" required>
+            <label for="firstName">First Name *</label>
+            <div class="line"></div>
+          </div>
+
+          <div class="form-group">
+            <input type="text" id="lastName" required>
+            <label for="lastName">Last Name *</label>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <select id="branch" required>
+              <option value="" disabled selected></option>
+              <option value="new-york">New York</option>
+              <option value="san-francisco">San Francisco</option>
+              <option value="chicago">Chicago</option>
+              <option value="boston">Boston</option>
+            </select>
+            <label for="branch">Select Branch *</label>
+            <div class="line"></div>
+          </div>
+
+          <div class="form-group">
+            <select id="position" required>
+              <option value="" disabled selected></option>
+              <option value="developer">Software Developer</option>
+              <option value="designer">UI/UX Designer</option>
+              <option value="manager">Project Manager</option>
+              <option value="marketing">Marketing Specialist</option>
+            </select>
+            <label for="position">Position *</label>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <input type="tel" id="contact" required>
+            <label for="contact">Contact Number *</label>
+            <div class="line"></div>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" required>
+            <label for="email">Email Address *</label>
+            <div class="line"></div>
+          </div>
+        </div>
+
+  <!-- File Upload Field -->
+<div class="form-group file-group">
+  <label for="resume" class="file-label">Upload Resume *</label>
+
+  <div class="custom-file-wrapper" onclick="document.getElementById('resume').click()">
+    <span id="file-text">No file chosen</span>
+    <span class="choose-btn">Choose File</span>
+  </div>
+
+  <input type="file" id="resume" class="file-input" required accept=".pdf,.doc,.docx" onchange="updateFileName()">
+  <div class="line"></div>
+</div>
+
+
+
+        <div class="button-group">
+          <button type="submit" class="submit"> <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+         </button>
+          <button type="reset" class="reset">Reset Form</button>
+        </div>
+      </form>
+      <p class="thank-you">Thank you for your application</p>
+    </div>
+    </main>
+     <!-- Footer -->
+    <footer id="footer"></footer>
+      <script src="assets/JS/nav&footer.js"></script>
+</body>
+</html>
