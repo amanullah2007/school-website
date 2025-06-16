@@ -219,7 +219,7 @@ position: absolute;
   margin-top: 2rem;
 }
 
- main button {
+ .reset {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -230,13 +230,13 @@ position: absolute;
   overflow: hidden;
   transition: 0.5s;
   margin-top: 2rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: var(--cyan);
   border: none;
   cursor: pointer;
 }
 
- main button:hover {
+ .reset:hover {
   background: var(--btn-cyan-hover);
   
 }
@@ -384,6 +384,70 @@ position: absolute;
   .form-row {
     flex-direction: column;
     gap: 0;
+  }
+}
+
+.why-work-section {
+  background: var(--body-bg);
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+}
+
+.why-work-section h2 {
+  color: var(--heading-color);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.why-work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.why-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  max-width: 250px;
+  flex: 1 1 200px;
+  transition: transform 0.3s;
+  border-bottom: 4px solid var(--cyan);
+}
+
+.why-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  border-bottom: 4px solid var(--btn-cyan-hover);
+}
+
+.why-card i {
+  font-size: 2.2rem;
+  color: var(--btn-cyan-hover);
+  margin-bottom: 1rem;
+}
+
+.why-card h3 {
+  color: var(--heading-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.why-card p {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .why-work-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-card {
+    max-width: 100%;
+    width: 100%;
   }
 }
 

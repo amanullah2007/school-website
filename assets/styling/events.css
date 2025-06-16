@@ -1,0 +1,106 @@
+:root{
+    --btn-cyan-hover:rgb(168, 154, 0);
+    --btn-green-hover:rgb(54, 180, 0);
+    --green:rgb(77, 255, 0);
+    --cyan:rgb(255, 234, 0);
+    --body-bg:rgb(234, 233, 233);
+    --paragraph-color:rgb(66, 66, 66);
+    --heading-color:black;
+    --heading-size:2.5rem;
+  }
+
+  .events-banner{
+    width: 100%;
+    position: relative;
+  }
+  .events-banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, 0.135);
+  }
+  .events-banner img{
+    width: 100%;
+    height: 450px;
+  }
+  .events-banner .web{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    font-size: 3.5rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .phone{
+    display: none;
+  }
+  /* Add to your CSS file */
+.explore-icon-animated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+   position: absolute;
+    top: 60%;
+    left: 49%;
+}
+
+.explore-icon-animated i {
+  font-size: 2.2rem;
+  color: var(--btn-cyan-hover);
+  animation: bounce-explore 1.2s infinite;
+}
+
+@keyframes bounce-explore {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(15px);}
+}
+
+  @media (max-width:768px) {
+    .web{
+        display: none;
+    }
+    .events-banner .phone{
+        display: block;
+        position: absolute;
+        top: 40%;
+        left: 36%;
+        font-size: 8.5vw;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    .explore-icon-animated {
+        position: absolute;
+        top: 65%;
+        left: 47%;
+    }
+  }
+  .events{
+    width: 100%;
+    background-color: var(--body-bg);
+  }
+  .events-heading{
+    margin-bottom: 2rem;
+  }
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .card{
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+  .card-content{
+    padding: 1rem;
+  }

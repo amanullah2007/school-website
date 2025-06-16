@@ -26,7 +26,7 @@ navbar.innerHTML = `
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="work.html">Work with Us</a></li>
                     <li><a href="admission.html">Admission</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -42,7 +42,7 @@ navbar.innerHTML = `
                 <ul class="menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="work.html">Work with Us</a></li>
                     <li><a href="admission.html">Admission</a></li>
                     <li><a href="contact.html">Contact</a></li>
