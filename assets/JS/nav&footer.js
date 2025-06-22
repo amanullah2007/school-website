@@ -138,7 +138,7 @@ window.addEventListener("scroll", function(){
     var topnavbar = document.getElementById("top-nav")
     var bottomnavbar = document.getElementById("bottom-nav")
     
-    if(window.scrollY > 150 ){
+    if(window.scrollY > 40 ){
         topnavbar.classList.add("top-nav-hide")
         topnavbar.classList.remove("top-nav")
 
